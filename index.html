@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hotkeys</title>
+    <script src="./res/data/img2keys.js"></script>
+    <script src="./res/data/index_keys.js"></script>
+    <script src="./res/class/PixelHotkeys.js"></script>
+    <script src="./lib/jquery-1.7.2.min.js"></script>
+    <script src="./res/script/demo.js"></script>
+    <link rel="stylesheet" href="./res/style/pixel-hotkeys.css">
+    <link rel="stylesheet" href="./res/style/demo.css">
+    <link rel="stylesheet" href="./res/style/_keys.css">
+</head>
+<body>
+    <div id="title-bar">
+        <span id="menu-show">≣</span>
+        <h1>Pixel Hotkeys</h1>
+    </div>
+
+    <div id="center">
+        <div id="menu">
+            <a class="menu-box" href="javascript:;">
+                <div class="menu-item selected" data-value="0">
+                    <span>EXAMPLE</span>
+                    <span class="pixel-hotkeys-key-box">
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
+                    </span>
+                </div>
+                <div class="menu-item" data-value="1">
+                    <span>MAPPING</span>
+                    <span class="pixel-hotkeys-key-box">
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
+                    </span>
+                </div>
+                <div class="menu-item" data-value="2">
+                    <span>ABOUT</span>
+                    <span class="pixel-hotkeys-key-box">
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
+                    </span>
+                </div>
+            </a>
+        </div>
+
+        <div id="content">
+            <div class="tabpage tabpage-example">
+                <div class="page">
+                    <div class="expression-box">
+                        <h2>EXPRESSION</h2>
+                        <textarea id="expression"></textarea>
+                    </div>
+                    <div class="expression-controller">
+                        <button id="reset">RESET</button><button id="execute" class="primary">EXECUTE</button>
+                    </div>
+
+                    <h2>EXAMPLE</h2>
+                    <div id="example"></div>
+                </div>
+            </div>
+
+            <div class="tabpage tabpage-mapping hide">
+                <div class="page">
+                    <h2>MAPPING</h2>
+                    <div id="mapping-box"></div>
+                </div>
+            </div>
+
+            <div class="tabpage tabpage-about hide">
+                <div class="page">
+                    <h2>ABOUT</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+            
+    </div>
+</body>
+</html>
