@@ -47,6 +47,15 @@ h2 {
     margin-top: 32px;
 }
 
+a:not(.menu-box) {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:not(.menu-box):hover {
+    border-bottom: #FFFFFF 1px solid;
+}
+
 #center {
     display: flex;
     min-height: 100vh;
