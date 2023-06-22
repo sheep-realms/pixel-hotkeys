@@ -23,6 +23,7 @@ let randomExample = [
 let menu = [
     'example',
     'mapping',
+    'support',
     'about',
 ]
 

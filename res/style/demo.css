@@ -150,7 +150,7 @@ a:not(.menu-box):hover {
 
 .page {
     margin: 0 auto;
-    width: min(calc(100vw - 32px - 256px), 1000px);
+    width: min(calc(100vw - 64px - 256px), 1000px);
 }
 
 #expression {
@@ -236,7 +236,7 @@ button+button {
 }
 
 
-.mapping-table {
+table {
     width: 100%;
     height: 100%;
     border-collapse: collapse;
@@ -245,19 +245,19 @@ button+button {
     margin-bottom: 10vh;
 }
 
-.mapping-table tbody {
+table tbody {
     height: 100%;
 }
 
-.mapping-table tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
     background-color: #808080;
 }
 
-.mapping-table tbody tr:nth-child(odd) {
+table tbody tr:nth-child(odd) {
     background-color: #999999;
 }
 
-.mapping-table tbody tr:first-child {
+table tbody tr:first-child {
     background-color: #E6E6E6;
     color: #000000;
     height: 48px;
@@ -277,6 +277,11 @@ button+button {
 
 .mapping-table tr td:first-child {
     text-align: center;
+}
+
+table tbody tr td,
+table tbody tr th {
+    padding: 4px 8px;
 }
 
 .tag {
@@ -302,7 +307,7 @@ button+button {
     color: #808080;
 }
 
-a:not(.menu-box):hover {
+#footer a:not(.menu-box):hover {
     border-bottom: #808080 1px solid;
 }
 
@@ -359,6 +364,10 @@ a:not(.menu-box):hover {
     }
 
     .menu-box:focus .menu-item.selected>.pixel-hotkeys-key-box {
+        display: none;
+    }
+
+    #menu::after {
         display: none;
     }
 

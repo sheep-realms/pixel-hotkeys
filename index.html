@@ -12,7 +12,7 @@
     <script src="./res/script/demo.js"></script>
     <link rel="stylesheet" href="./res/style/pixel-hotkeys.css">
     <link rel="stylesheet" href="./res/style/demo.css">
-    <link rel="stylesheet" href="./res/style/_keys.css">
+    <link rel="stylesheet" href="./res/style/keys.css">
 </head>
 <body>
     <div id="title-bar">
@@ -38,6 +38,13 @@
                     </span>
                 </div>
                 <div class="menu-item" data-value="2">
+                    <span>SUPPORT</span>
+                    <span class="pixel-hotkeys-key-box">
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
+                        <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
+                    </span>
+                </div>
+                <div class="menu-item" data-value="3">
                     <span>ABOUT</span>
                     <span class="pixel-hotkeys-key-box">
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
@@ -59,14 +66,51 @@
                     </div>
 
                     <h2>EXAMPLE</h2>
-                    <div id="example"></div>
+                    <div id="example" @pixel-hotkeys></div>
                 </div>
             </div>
 
             <div class="tabpage tabpage-mapping hide">
                 <div class="page">
                     <h2>MAPPING</h2>
+                    <a href="javascript:;"></a>
                     <div id="mapping-box"></div>
+                </div>
+            </div>
+
+            <div class="tabpage tabpage-support hide">
+                <div class="page">
+                    <h2>BROWSER SUPPORT</h2>
+                    <a href="javascript:;"></a>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>BROWSER</th>
+                                <th>VERSION</th>
+                                <th>STATE</th>
+                            </tr>
+                            <tr>
+                                <td>Google Chrome</td>
+                                <td>114.0</td>
+                                <td style="color: #A7E6A7;">OK</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft Edge</td>
+                                <td>114.0</td>
+                                <td style="color: #A7E6A7;">OK</td>
+                            </tr>
+                            <tr>
+                                <td>Microsoft Edge for Android</td>
+                                <td>114.0</td>
+                                <td style="color: #F2C0C0;">NO</td>
+                            </tr>
+                            <tr>
+                                <td>FireFox for Android</td>
+                                <td>114.1</td>
+                                <td style="color: #F2C0C0;">NO</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
