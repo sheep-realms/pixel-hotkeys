@@ -56,6 +56,13 @@ a:not(.menu-box):hover {
     border-bottom: #FFFFFF 1px solid;
 }
 
+a.keyboard-access-anchor {
+    font-size: 0;
+    user-select: none;
+    display: block;
+    height: 0;
+}
+
 #center {
     display: flex;
     min-height: 100vh;
@@ -300,15 +307,15 @@ table tbody tr th {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #808080;
+    color: #C7C7C7;
 }
 
 #footer a:not(.menu-box){
-    color: #808080;
+    color: #C7C7C7;
 }
 
 #footer a:not(.menu-box):hover {
-    border-bottom: #808080 1px solid;
+    border-bottom: #C7C7C7 1px solid;
 }
 
 @media screen and (max-width: 760px) {

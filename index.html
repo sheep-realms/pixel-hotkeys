@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,36 +15,36 @@
     <link rel="stylesheet" href="./res/style/keys.css">
 </head>
 <body>
-    <div id="title-bar">
-        <span id="menu-show">≣</span>
+    <header id="title-bar" aria-label="title bar">
+        <span id="menu-show" aria-label="open menu">≣</span>
         <h1>Pixel Hotkeys</h1>
-    </div>
+    </header>
 
     <div id="center">
-        <div id="menu">
+        <nav id="menu" aria-label="menu">
             <a class="menu-box" href="javascript:;">
-                <div class="menu-item selected" data-value="0">
+                <div class="menu-item selected" data-value="0" aria-label="example, menu options">
                     <span>EXAMPLE</span>
                     <span class="pixel-hotkeys-key-box">
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
                     </span>
                 </div>
-                <div class="menu-item" data-value="1">
+                <div class="menu-item" data-value="1" aria-label="mapping, menu options">
                     <span>MAPPING</span>
                     <span class="pixel-hotkeys-key-box">
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
                     </span>
                 </div>
-                <div class="menu-item" data-value="2">
+                <div class="menu-item" data-value="2" aria-label="support, menu options">
                     <span>SUPPORT</span>
                     <span class="pixel-hotkeys-key-box">
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_down"></span>
                     </span>
                 </div>
-                <div class="menu-item" data-value="3">
+                <div class="menu-item" data-value="3" aria-label="about, menu options">
                     <span>ABOUT</span>
                     <span class="pixel-hotkeys-key-box">
                         <span class="pixel-hotkeys-key" data-pixel-hotkeys-name="arrow_up"></span>
@@ -52,13 +52,14 @@
                     </span>
                 </div>
             </a>
-        </div>
+        </nav>
 
-        <div id="content">
+        <main id="content">
             <div class="tabpage tabpage-example">
                 <div class="page">
                     <div class="expression-box">
                         <h2>EXPRESSION</h2>
+                        <label for="expression" style="display: none;">expression</label>
                         <textarea id="expression"></textarea>
                     </div>
                     <div class="expression-controller">
@@ -66,14 +67,14 @@
                     </div>
 
                     <h2>EXAMPLE</h2>
-                    <div id="example" @pixel-hotkeys></div>
+                    <div id="example"></div>
                 </div>
             </div>
 
             <div class="tabpage tabpage-mapping hide">
                 <div class="page">
                     <h2>MAPPING</h2>
-                    <a href="javascript:;"></a>
+                    <a href="javascript:;" aria-hidden="true" class="keyboard-access-anchor">Keyboard Access Anchor</a>
                     <div id="mapping-box"></div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
             <div class="tabpage tabpage-support hide">
                 <div class="page">
                     <h2>BROWSER SUPPORT</h2>
-                    <a href="javascript:;"></a>
+                    <a href="javascript:;" aria-hidden="true" class="keyboard-access-anchor">Keyboard Access Anchor</a>
                     <table>
                         <tbody>
                             <tr>
@@ -102,12 +103,12 @@
                             <tr>
                                 <td>Microsoft Edge for Android</td>
                                 <td>114.0</td>
-                                <td style="color: #F2C0C0;">NO</td>
+                                <td style="color: #A7E6A7;">OK</td>
                             </tr>
                             <tr>
                                 <td>FireFox for Android</td>
                                 <td>114.1</td>
-                                <td style="color: #F2C0C0;">NO</td>
+                                <td style="color: #F2F2BF;">DEFECTIVE</td>
                             </tr>
                         </tbody>
                     </table>
@@ -122,10 +123,10 @@
                     <p>License: GPL-3.0 license</p>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
     
-    <div id="footer">
+    <footer id="footer">
         <div style="text-align: center;">
             <p>Author: 
                 <a href="https://github.com/sheep-realms">Sheep-realms</a> |
@@ -133,6 +134,6 @@
             </p>
             <p>License: GPL-3.0 license</p>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
