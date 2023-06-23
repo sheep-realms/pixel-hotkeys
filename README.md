@@ -52,5 +52,5 @@
 获取组合键 HTML 代码。
 | 参数名 | 类型 | 默认值 | 描述 |
 | - | - | - | - |
-| expression | String | | 表达式 |
+| expression | String | | 表达式。 |
 | label | String | '' | 标签内容。当表达式中定义了标签内容时，该值将替代表达式中的标签内容。 |

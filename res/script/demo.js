@@ -18,6 +18,11 @@ let randomExample = [
     'ctrl $+ a | Select all',
     'ctrl $+ t | Transformation',
     'ctrl $+ s | Save',
+    'gccu gccu gccd gccd gccl gccr gccl gccr gcb gca gcb gca | KONAMI',
+    'ctrl $+ enter | Submit',
+    'f3 $+ f4 | Switch game mode',
+    'ctrl $+ b | Bold',
+    'home $_ | Display hitboxes',
 ];
 
 let menu = [
